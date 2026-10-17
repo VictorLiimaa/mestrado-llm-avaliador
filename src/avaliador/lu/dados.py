@@ -36,6 +36,9 @@ NOTA_USUARIO_AUSENTE = 3
 def carregar(pasta: str | Path) -> pd.DataFrame:
     """Devolve uma linha por explicação, com notas reais, notas dos anotadores e contexto do usuário."""
     pasta = Path(pasta)
+    if not (pasta / "df_explanation.pkl").exists():
+        raise FileNotFoundError(f"Dados do Lu não encontrados em {pasta}. "
+                                "Rode antes: python scripts/dados_baixar_lu.py")
     completo = pd.read_pickle(pasta / "df_explanation.pkl")
     anotadores = pd.read_csv(pasta / "third_party.csv")
     selecionado = pd.read_csv(pasta / "df_explanation_selected.csv")

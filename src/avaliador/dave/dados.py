@@ -98,6 +98,9 @@ def carregar_notas(pasta: str | Path) -> pd.DataFrame:
 
 def carregar(pasta: str | Path) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Devolve (segues, notas), só com os segues que foram de fato avaliados."""
+    if not (Path(pasta) / "answers.json").exists():
+        raise FileNotFoundError(f"Dados do Dave não encontrados em {pasta}. Rode antes: "
+                                "python scripts/dados_preparar_dave.py <zip do Zenodo>")
     segues = carregar_segues(pasta)
     notas = carregar_notas(pasta)
     notas = notas.merge(segues[["segue_idx", "sistema", "categoria"]], on=["segue_idx", "sistema"],
