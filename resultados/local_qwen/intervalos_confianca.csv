@@ -1,0 +1,12 @@
+avaliador,media_%,ic95_inf,ic95_sup,comparado_com,diferenca,dif_ic95_inf,dif_ic95_sup
+Annotator-1,15.16,11.57,19.08,,,,
+Annotator-2,16.8,12.72,20.98,,,,
+Media-do-tipo,28.81,24.75,33.23,qwen2.5-7b E0,2.97,-0.84,7.43
+qwen2.5-7b E0,25.84,21.75,29.87,,,,
+qwen2.5-7b so_demografia,20.84,15.94,25.5,qwen2.5-7b E0,-5.0,-8.85,-1.33
+qwen2.5-7b so_resumo,22.69,17.76,27.45,qwen2.5-7b E0,-3.15,-8.46,1.9
+qwen2.5-7b so_preferencias,18.28,11.24,24.28,qwen2.5-7b E0,-7.56,-12.93,-2.39
+qwen2.5-7b foco_E0,24.25,19.81,28.56,qwen2.5-7b E0,-1.59,-2.79,-0.27
+qwen2.5-7b foco_resumo,23.53,18.8,28.16,qwen2.5-7b so_resumo,0.84,-0.93,2.5
+qwen2.5-7b foco_demografia,22.68,18.07,27.21,qwen2.5-7b so_demografia,1.84,-1.19,4.57
+qwen2.5-7b foco_preferencias,17.73,10.7,23.62,qwen2.5-7b so_preferencias,-0.54,-1.97,0.9

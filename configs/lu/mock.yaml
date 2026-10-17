@@ -1,0 +1,17 @@
+# Teste do pipeline do Lu sem LLM: dois modelos falsos (notas pseudoaleatórias), 5 usuários.
+experimento: lu_mock
+n_usuarios: 5                # null = todos os 39 usuários
+semente: 2026
+condicoes: [E0, so_demografia, so_resumo, so_preferencias, foco_E0, foco_resumo]
+reproduzir_bug_transparencia: false
+resposta_curta: true
+paralelo: 4
+reamostragens_bootstrap: 200
+modelos:
+  - nome: mock-a
+    backend: mock
+  - nome: mock-b
+    backend: mock
+combinacao:                  # média dos modelos listados, por condição
+  - nome: media-mock
+    modelos: [mock-a, mock-b]

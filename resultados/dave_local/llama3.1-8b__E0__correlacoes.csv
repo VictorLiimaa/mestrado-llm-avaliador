@@ -1,0 +1,17 @@
+metrica,avaliador,pearson_%,spearman_%,ic95_inf,ic95_sup,n
+likeable,llm,8.625,8.0456,1.2985,16.2243,802
+likeable,outro_humano,14.6711,16.1666,8.8358,20.4339,802
+high_quality,llm,7.6413,7.6,0.05,15.0776,800
+high_quality,outro_humano,13.2226,13.6703,6.3948,20.4363,800
+understandable,llm,6.2042,5.3785,-1.6352,13.7576,798
+understandable,outro_humano,18.454,17.3323,11.2438,25.1084,798
+sparked_interest,llm,-0.4148,0.0324,-7.6143,6.6044,801
+sparked_interest,outro_humano,4.8252,5.0463,-2.4819,12.2133,801
+funny,llm,1.9355,2.6266,-6.7107,10.6666,801
+funny,outro_humano,6.7182,7.0482,-0.543,14.3242,801
+informative,llm,35.4136,34.6158,27.8816,42.8353,802
+informative,outro_humano,19.6003,21.5592,12.7018,26.3719,802
+creative,llm,8.2606,10.1696,0.7233,15.3434,799
+creative,outro_humano,15.5407,16.2442,8.2594,22.9876,798
+well_written,llm,11.6285,11.2688,4.1449,18.7353,796
+well_written,outro_humano,1.4761,5.1426,-5.6962,9.0927,795

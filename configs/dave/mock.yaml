@@ -1,0 +1,9 @@
+# Teste do pipeline do Dave sem LLM (notas pseudoaleatórias). Só para conferir que tudo roda.
+experimento: dave_mock
+condicoes: [E0]
+resposta_curta: true
+paralelo: 1
+reamostragens_bootstrap: 200
+modelos:
+  - nome: mock
+    backend: mock

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Dados: não são redistribuídos aqui (veja dados/README.md e os scripts dados_*.py)
+dados/lu/*
+!dados/lu/.gitkeep
+dados/dave/*
+!dados/dave/.gitkeep
+
+# Saídas dos testes com modelo falso. As rodadas reais (resultados/<experimento>/, com o cache
+# das respostas das LLMs) são versionadas: dá para refazer as análises sem rodar as LLMs de novo.
+resultados/*_mock/
+
+# Editor e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

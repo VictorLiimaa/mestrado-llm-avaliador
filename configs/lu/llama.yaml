@@ -1,0 +1,18 @@
+# Lu, todos os 39 usuários, Llama3.1-8B no Ollama local (para ver se o padrão do Qwen se repete).
+# Antes: `ollama pull llama3.1:8b`.
+experimento: local_llama
+n_usuarios: null
+semente: 2026
+condicoes: [E0, so_resumo]
+reproduzir_bug_transparencia: false
+resposta_curta: true
+paralelo: 4
+reamostragens_bootstrap: 1000
+modelos:
+  - nome: llama3.1-8b
+    backend: openai_compat
+    modelo: llama3.1:8b
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    temperatura: 0.0
+    max_tokens: 16

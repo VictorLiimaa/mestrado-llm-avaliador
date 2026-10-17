@@ -1,0 +1,27 @@
+# Ouvinte simulado no teste do Dave, no computador local com Ollama.
+# Os segues estão em inglês. Roda os dois modelos: no Lu (chinês) o Qwen foi muito melhor;
+# aqui queremos ver se isso se mantém em inglês.
+# Antes: ollama pull qwen2.5:7b   e   ollama pull llama3.1:8b
+experimento: dave_local
+condicoes: [E0]
+resposta_curta: true      # pede só os 8 números
+paralelo: 4
+reamostragens_bootstrap: 1000
+modelos:
+  - nome: qwen2.5-7b
+    backend: openai_compat
+    modelo: qwen2.5:7b
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    temperatura: 0.0
+    max_tokens: 24
+  - nome: llama3.1-8b
+    backend: openai_compat
+    modelo: llama3.1:8b
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    temperatura: 0.0
+    max_tokens: 24
+combinacao:                  # média dos dois modelos, por condição
+  - nome: media-qwen-llama
+    modelos: [qwen2.5-7b, llama3.1-8b]

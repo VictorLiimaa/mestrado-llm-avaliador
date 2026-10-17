@@ -1,0 +1,6 @@
+avaliador,media_%,ic95_inf,ic95_sup,comparado_com,diferenca,dif_ic95_inf,dif_ic95_sup
+Annotator-1,15.16,11.57,19.08,,,,
+Annotator-2,16.8,12.72,20.98,,,,
+Media-do-tipo,28.81,24.75,33.23,llama3.1-8b E0,15.83,11.62,20.55
+llama3.1-8b E0,12.98,9.34,16.53,,,,
+llama3.1-8b so_resumo,21.25,16.99,25.41,llama3.1-8b E0,8.27,4.15,12.57

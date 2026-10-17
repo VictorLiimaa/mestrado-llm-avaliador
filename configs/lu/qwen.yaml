@@ -1,0 +1,20 @@
+# Lu, todos os 39 usuários, Qwen2.5-7B no Ollama local.
+# Antes: instale o Ollama e rode `ollama pull qwen2.5:7b`.
+# Condições: E0 (sem contexto), cada contexto isolado (so_*) e as mesmas com a instrução de
+# julgar só a explicação (foco_*). O que já está no cache não é rodado de novo.
+experimento: local_qwen
+n_usuarios: null
+semente: 2026
+condicoes: [E0, so_demografia, so_resumo, so_preferencias, foco_E0, foco_resumo, foco_demografia, foco_preferencias]
+reproduzir_bug_transparencia: false
+resposta_curta: true         # pede só os 4 números (muito mais rápido)
+paralelo: 4                  # chamadas simultâneas ao Ollama
+reamostragens_bootstrap: 1000
+modelos:
+  - nome: qwen2.5-7b
+    backend: openai_compat
+    modelo: qwen2.5:7b
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    temperatura: 0.0
+    max_tokens: 16
