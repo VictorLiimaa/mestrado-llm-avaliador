@@ -80,9 +80,11 @@ def main(caminho_config: str):
             f"Mesma conclusão que os humanos em **{n_iguais} de {len(conc)}** comparações "
             "(mesma significância a 5% e, se significativa, mesmo sentido).\n\n",
             conc.round(3).to_markdown(index=False),
-            "\n\n### 2. Correlação com cada participante (Pearson %, IC 95% por bootstrap)\n\n"
+            "\n\n### 2. Correlação com cada participante (Pearson %, p-valor e IC 95%)\n\n"
             "`outro_humano` = média dos outros participantes que viram o mesmo segue "
-            "(o quanto as pessoas concordam entre si).\n\n",
+            "(o quanto as pessoas concordam entre si). `ic_fisher` = intervalo do "
+            "scipy.stats.pearsonr (supõe notas independentes); `ic_boot` = bootstrap por "
+            "participante (respeita as várias notas de cada pessoa).\n\n",
             corr.round(2).to_markdown(index=False),
             f"\n\nMédia nas 8 métricas: LLM {corr_w['llm'].mean():.2f}% | "
             f"outro humano {corr_w['outro_humano'].mean():.2f}%\n",

@@ -1,13 +1,18 @@
-"""Correlações de Pearson, Spearman e Kendall implementadas só com numpy.
+"""Correlações de Pearson, Spearman e Kendall só com numpy; Pearson também com p-valor e intervalo.
 
 O scipy faz o mesmo, mas no Windows com o "Controle Inteligente de Aplicativos" ligado as DLLs do
 scipy são bloqueadas. Os testes conferem que os valores batem com o scipy quando ele está disponível.
 """
 from __future__ import annotations
 
+import math
 import warnings
+from dataclasses import dataclass
+from statistics import NormalDist
 
 import numpy as np
+
+from .estatistica import p_bicaudal_t
 
 
 def _postos(x: np.ndarray) -> np.ndarray:
@@ -57,3 +62,53 @@ def correlacao(a, b, metodo: str = "pearson") -> float:
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         return float(METODOS[metodo](a, b))
+
+
+@dataclass
+class ResultadoPearson:
+    """Correlação de Pearson com p-valor e intervalo de confiança, como scipy.stats.pearsonr."""
+
+    r: float
+    p: float
+    ic_inf: float
+    ic_sup: float
+    n: int
+
+
+def pearson_ic(a, b, confianca: float = 0.95) -> ResultadoPearson:
+    """Pearson com p-valor bicaudal e intervalo de confiança pela transformação de Fisher.
+
+    Reproduz scipy.stats.pearsonr(a, b) e o seu .confidence_interval(confidence_level):
+    - p-valor: teste t com n - 2 graus de liberdade, t = r * sqrt((n - 2) / (1 - r²));
+    - intervalo: z = arctanh(r) tem erro padrão 1 / sqrt(n - 3); o intervalo
+      z ± z_crítico * erro é levado de volta com tanh. Com n <= 3, o intervalo é [-1, 1].
+
+    Pares com NaN em qualquer lado são descartados.
+
+    Atenção: a fórmula supõe pares INDEPENDENTES. Quando o mesmo usuário aparece em várias
+    linhas, o intervalo sai estreito demais; nesse caso, o bootstrap por usuário é o mais honesto.
+    """
+    a = np.asarray(a, dtype=float)
+    b = np.asarray(b, dtype=float)
+    ok = ~(np.isnan(a) | np.isnan(b))
+    a, b = a[ok], b[ok]
+    n = len(a)
+    r = correlacao(a, b, "pearson")
+    if np.isnan(r):
+        return ResultadoPearson(np.nan, np.nan, np.nan, np.nan, n)
+    r = float(np.clip(r, -1.0, 1.0))
+
+    if abs(r) == 1.0:
+        p = 0.0
+    else:
+        t = r * math.sqrt((n - 2) / (1 - r * r))
+        p = p_bicaudal_t(t, n - 2)
+
+    if n <= 3:
+        ic_inf, ic_sup = -1.0, 1.0
+    else:
+        z = np.arctanh(np.clip(r, -1 + 1e-15, 1 - 1e-15))
+        erro = 1 / math.sqrt(n - 3)
+        critico = NormalDist().inv_cdf(0.5 + confianca / 2)
+        ic_inf, ic_sup = float(np.tanh(z - critico * erro)), float(np.tanh(z + critico * erro))
+    return ResultadoPearson(r, p, ic_inf, ic_sup, n)

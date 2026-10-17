@@ -122,6 +122,16 @@ resultados/   saídas e respostas das LLMs, por experimento
 As correlações e os testes t são implementados só com numpy porque o scipy é bloqueado em
 alguns Windows; os testes conferem os valores com o scipy quando ele está disponível.
 
+## Correlação de Pearson e intervalos de confiança
+
+Cada Pearson é reportado como o `scipy.stats.pearsonr`: coeficiente, p-valor bicaudal e intervalo
+de confiança de 95% pela transformação de Fisher (`avaliador.comum.correlacao.pearson_ic`). Ao
+lado, um segundo intervalo por bootstrap, reamostrando usuários. O de Fisher supõe que as notas
+são independentes; quando a mesma pessoa avalia muitos itens, isso não vale e ele sai estreito
+demais. No Lu (~65 explicações por usuário), o intervalo por bootstrap é cerca de 1,5 vez mais
+largo que o de Fisher; no Dave (~6 avaliações por pessoa), praticamente igual. Arquivos:
+`resultados/<experimento>/pearson_ic.csv` (Lu) e `*__correlacoes.csv` (Dave).
+
 ## Decisões de método
 
 **Lu.** As condições de contexto (`so_demografia`, `so_resumo`, `so_preferencias`, e as

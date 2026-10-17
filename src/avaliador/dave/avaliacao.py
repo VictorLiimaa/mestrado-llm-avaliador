@@ -14,7 +14,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from ..comum.correlacao import pearson, spearman
+from ..comum.correlacao import pearson, pearson_ic, spearman
 from ..comum.estatistica import estrelas, ttest_independente, ttest_pareado
 from .dados import METRICAS
 
@@ -94,7 +94,8 @@ def correlacoes(notas: pd.DataFrame, llm: pd.DataFrame, reamostragens: int = 100
     participantes do mesmo segue (o "teto humano"). Só entram segues vistos por 2+ pessoas,
     para os dois avaliadores usarem exatamente as mesmas linhas.
 
-    O intervalo de 95% vem de bootstrap por participante.
+    Dois intervalos de 95%: o de Fisher (o mesmo do scipy.stats.pearsonr, que supõe notas
+    independentes) e o de bootstrap por participante (que respeita as várias notas de cada pessoa).
     """
     df = notas.merge(llm, on=["segue_idx", "sistema"], suffixes=("", "_llm"))
     vistos = df.groupby(["segue_idx", "sistema"])["usuario"].transform("count") >= 2
@@ -109,17 +110,18 @@ def correlacoes(notas: pd.DataFrame, llm: pd.DataFrame, reamostragens: int = 100
         preditores = {"llm": df[f"{m}_llm"].to_numpy(float), "outro_humano": _teto_humano(df, m)}
         for nome, pred in preditores.items():
             ok = ~(np.isnan(real) | np.isnan(pred))
-            r = pearson(real[ok], pred[ok])
+            r = pearson_ic(real[ok], pred[ok])
             amostras = []
             for _ in range(reamostragens):
                 idx = np.concatenate([idx_por_usuario[u] for u in rng.choice(usuarios, len(usuarios))])
                 a, b = real[idx], pred[idx]
                 k = ~(np.isnan(a) | np.isnan(b))
                 amostras.append(pearson(a[k], b[k]))
-            linhas.append({"metrica": m, "avaliador": nome, "pearson_%": 100 * r,
-                           "spearman_%": 100 * spearman(real[ok], pred[ok]),
-                           "ic95_inf": 100 * np.nanpercentile(amostras, 2.5),
-                           "ic95_sup": 100 * np.nanpercentile(amostras, 97.5), "n": int(ok.sum())})
+            linhas.append({"metrica": m, "avaliador": nome, "pearson_%": 100 * r.r, "p": r.p,
+                           "ic_fisher_inf_%": 100 * r.ic_inf, "ic_fisher_sup_%": 100 * r.ic_sup,
+                           "ic_boot_inf_%": 100 * np.nanpercentile(amostras, 2.5),
+                           "ic_boot_sup_%": 100 * np.nanpercentile(amostras, 97.5),
+                           "spearman_%": 100 * spearman(real[ok], pred[ok]), "n": r.n})
     return pd.DataFrame(linhas)
 
 

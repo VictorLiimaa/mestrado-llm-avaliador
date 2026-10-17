@@ -68,6 +68,57 @@ Pearson médio nos 4 aspectos, nível conjunto. Na comparação com o E0, se o i
 | qwen2.5-7b foco_demografia   |     22.68 |      18.07 |      27.21 | qwen2.5-7b so_demografia   |        1.84 |          -1.19 |           4.57 |
 | qwen2.5-7b foco_preferencias |     17.73 |      10.7  |      23.62 | qwen2.5-7b so_preferencias |       -0.54 |          -1.97 |           0.9  |
 
+## Pearson por aspecto com p-valor e intervalos de 95%
+
+Nível do conjunto. `ic_fisher` = intervalo do scipy.stats.pearsonr (supõe explicações independentes); `ic_boot` = bootstrap por usuário (respeita as várias explicações de cada usuário). Quando os dois diferem, o bootstrap é o mais confiável.
+
+| avaliador                    | aspecto        |   pearson_% |           p |   ic_fisher_inf_% |   ic_fisher_sup_% |   ic_boot_inf_% |   ic_boot_sup_% |    n |
+|:-----------------------------|:---------------|------------:|------------:|------------------:|------------------:|----------------:|----------------:|-----:|
+| Annotator-1                  | persuasiveness |       19.88 | 5.05873e-24 |             16.11 |             23.59 |           14.74 |           25.02 | 2536 |
+| Annotator-1                  | transparency   |       15.66 | 2.15992e-15 |             11.84 |             19.43 |           11.87 |           19.78 | 2536 |
+| Annotator-1                  | accuracy       |       10.16 | 2.9295e-07  |              6.29 |             14    |            5.61 |           14.81 | 2536 |
+| Annotator-1                  | satisfaction   |       14.93 | 4.04321e-14 |             11.11 |             18.72 |            9.86 |           20.36 | 2536 |
+| Annotator-2                  | persuasiveness |       21.4  | 1.1512e-27  |             17.66 |             25.09 |           16.33 |           26.37 | 2536 |
+| Annotator-2                  | transparency   |       25.97 | 2.26008e-40 |             22.31 |             29.57 |           21.64 |           30.75 | 2536 |
+| Annotator-2                  | accuracy       |       10.96 | 3.15793e-08 |              7.1  |             14.79 |            6.05 |           15.8  | 2536 |
+| Annotator-2                  | satisfaction   |        8.86 | 7.96958e-06 |              4.98 |             12.7  |            1.08 |           16.5  | 2536 |
+| Media-do-tipo                | persuasiveness |       30.93 | 2.41386e-57 |             27.37 |             34.41 |           26.75 |           35.34 | 2536 |
+| Media-do-tipo                | transparency   |       28.8  | 1.28906e-49 |             25.19 |             32.33 |           24.42 |           33.63 | 2536 |
+| Media-do-tipo                | accuracy       |       29.13 | 8.77819e-51 |             25.53 |             32.65 |           24.38 |           34.25 | 2536 |
+| Media-do-tipo                | satisfaction   |       26.4  | 1.08079e-41 |             22.74 |             29.98 |           20.78 |           32.37 | 2536 |
+| qwen2.5-7b E0                | persuasiveness |       28.12 | 2.64793e-47 |             24.5  |             31.67 |           23.43 |           32.63 | 2536 |
+| qwen2.5-7b E0                | transparency   |       31.36 | 5.34556e-59 |             27.81 |             34.83 |           27.06 |           35.75 | 2536 |
+| qwen2.5-7b E0                | accuracy       |       22.02 | 3.27748e-29 |             18.28 |             25.69 |           15.7  |           28.11 | 2536 |
+| qwen2.5-7b E0                | satisfaction   |       21.86 | 8.25445e-29 |             18.12 |             25.53 |           17.27 |           26.73 | 2536 |
+| qwen2.5-7b so_demografia     | persuasiveness |       21.74 | 1.6722e-28  |             18    |             25.42 |           15.32 |           28.05 | 2536 |
+| qwen2.5-7b so_demografia     | transparency   |       30.76 | 1.0051e-56  |             27.2  |             34.25 |           25.54 |           36.19 | 2536 |
+| qwen2.5-7b so_demografia     | accuracy       |       12.26 | 5.80929e-10 |              8.41 |             16.08 |            6.23 |           17.53 | 2536 |
+| qwen2.5-7b so_demografia     | satisfaction   |       18.6  | 3.58035e-21 |             14.81 |             22.33 |           11.89 |           24.91 | 2536 |
+| qwen2.5-7b so_resumo         | persuasiveness |       19.88 | 5.21858e-24 |             16.11 |             23.59 |           14.26 |           25.47 | 2536 |
+| qwen2.5-7b so_resumo         | transparency   |       29.19 | 5.30472e-51 |             25.59 |             32.71 |           23.51 |           34.67 | 2536 |
+| qwen2.5-7b so_resumo         | accuracy       |       20.03 | 2.31988e-24 |             16.26 |             23.74 |           13.87 |           26.46 | 2536 |
+| qwen2.5-7b so_resumo         | satisfaction   |       21.66 | 2.57285e-28 |             17.92 |             25.34 |           14.61 |           28.35 | 2536 |
+| qwen2.5-7b so_preferencias   | persuasiveness |       17.69 | 2.81154e-19 |             13.9  |             21.44 |           10.25 |           25.01 | 2536 |
+| qwen2.5-7b so_preferencias   | transparency   |       25.54 | 4.56615e-39 |             21.87 |             29.15 |           18.93 |           31.78 | 2536 |
+| qwen2.5-7b so_preferencias   | accuracy       |       13.99 | 1.49642e-12 |             10.15 |             17.78 |            6.91 |           20.25 | 2536 |
+| qwen2.5-7b so_preferencias   | satisfaction   |       15.88 | 8.72612e-16 |             12.06 |             19.65 |            7.04 |           24    | 2536 |
+| qwen2.5-7b foco_E0           | persuasiveness |       24.26 | 2.64478e-35 |             20.57 |             27.89 |           18.91 |           29.63 | 2536 |
+| qwen2.5-7b foco_E0           | transparency   |       28.51 | 1.24314e-48 |             24.89 |             32.05 |           24.05 |           33.06 | 2536 |
+| qwen2.5-7b foco_E0           | accuracy       |       24.56 | 3.76662e-36 |             20.87 |             28.18 |           18.95 |           30.24 | 2536 |
+| qwen2.5-7b foco_E0           | satisfaction   |       19.68 | 1.49152e-23 |             15.91 |             23.39 |           14.38 |           24.99 | 2536 |
+| qwen2.5-7b foco_resumo       | persuasiveness |       20.46 | 2.26254e-25 |             16.7  |             24.16 |           14.78 |           26    | 2536 |
+| qwen2.5-7b foco_resumo       | transparency   |       27.21 | 2.68325e-44 |             23.57 |             30.78 |           21.5  |           32.22 | 2536 |
+| qwen2.5-7b foco_resumo       | accuracy       |       24.56 | 3.80968e-36 |             20.86 |             28.18 |           18.97 |           30.57 | 2536 |
+| qwen2.5-7b foco_resumo       | satisfaction   |       21.91 | 6.18921e-29 |             18.17 |             25.58 |           14.98 |           28.71 | 2536 |
+| qwen2.5-7b foco_demografia   | persuasiveness |       22.41 | 3.14054e-30 |             18.68 |             26.07 |           16.87 |           27.85 | 2536 |
+| qwen2.5-7b foco_demografia   | transparency   |       31.3  | 9.65862e-59 |             27.74 |             34.76 |           26.42 |           36.52 | 2536 |
+| qwen2.5-7b foco_demografia   | accuracy       |       16.51 | 5.81927e-17 |             12.7  |             20.27 |            9.86 |           22.04 | 2536 |
+| qwen2.5-7b foco_demografia   | satisfaction   |       20.51 | 1.70294e-25 |             16.75 |             24.21 |           14.56 |           25.94 | 2536 |
+| qwen2.5-7b foco_preferencias | persuasiveness |       17.33 | 1.48657e-18 |             13.53 |             21.08 |           10.08 |           24.32 | 2536 |
+| qwen2.5-7b foco_preferencias | transparency   |       22.89 | 1.70858e-31 |             19.17 |             26.54 |           16.7  |           28.43 | 2536 |
+| qwen2.5-7b foco_preferencias | accuracy       |       14.79 | 7.01749e-14 |             10.96 |             18.58 |            6.23 |           22.46 | 2536 |
+| qwen2.5-7b foco_preferencias | satisfaction   |       15.93 | 7.15439e-16 |             12.11 |             19.7  |            8.38 |           22.89 | 2536 |
+
 ## Correlação dentro do tipo de explicação
 
 Pearson médio calculado separadamente em cada um dos 9 tipos de explicação. Mede se o avaliador distingue explicações do mesmo tipo, e não só qual tipo costuma ser melhor.

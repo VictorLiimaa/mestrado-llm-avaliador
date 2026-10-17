@@ -44,29 +44,29 @@ Mesma conclusão que os humanos em **15 de 24** comparações (mesma significân
 | engracados   | well_written     |        -0.193 |       0.083 |    -0.259 |   0.009 | True          | False             |
 
 
-### 2. Correlação com cada participante (Pearson %, IC 95% por bootstrap)
+### 2. Correlação com cada participante (Pearson %, p-valor e IC 95%)
 
-`outro_humano` = média dos outros participantes que viram o mesmo segue (o quanto as pessoas concordam entre si).
+`outro_humano` = média dos outros participantes que viram o mesmo segue (o quanto as pessoas concordam entre si). `ic_fisher` = intervalo do scipy.stats.pearsonr (supõe notas independentes); `ic_boot` = bootstrap por participante (respeita as várias notas de cada pessoa).
 
 
-| metrica          | avaliador    |   pearson_% |   spearman_% |   ic95_inf |   ic95_sup |   n |
-|:-----------------|:-------------|------------:|-------------:|-----------:|-----------:|----:|
-| likeable         | llm          |        9    |         9.08 |       2.09 |      15.52 | 802 |
-| likeable         | outro_humano |       14.67 |        16.17 |       8.84 |      20.43 | 802 |
-| high_quality     | llm          |        5.57 |         5.42 |      -1.11 |      12.65 | 800 |
-| high_quality     | outro_humano |       13.22 |        13.67 |       6.39 |      20.44 | 800 |
-| understandable   | llm          |       13.08 |        11.15 |       5.97 |      20.8  | 798 |
-| understandable   | outro_humano |       18.45 |        17.33 |      11.24 |      25.11 | 798 |
-| sparked_interest | llm          |        1.25 |         1.29 |      -6.06 |       8.79 | 801 |
-| sparked_interest | outro_humano |        4.83 |         5.05 |      -2.48 |      12.21 | 801 |
-| funny            | llm          |        9.47 |         8    |       1.69 |      16.56 | 801 |
-| funny            | outro_humano |        6.72 |         7.05 |      -0.54 |      14.32 | 801 |
-| informative      | llm          |       19.11 |        18.89 |      11.9  |      26.45 | 802 |
-| informative      | outro_humano |       19.6  |        21.56 |      12.7  |      26.37 | 802 |
-| creative         | llm          |        7.3  |         6.98 |       0.74 |      14.45 | 799 |
-| creative         | outro_humano |       15.54 |        16.24 |       8.26 |      22.99 | 798 |
-| well_written     | llm          |        3.5  |         3.44 |      -3.25 |      10.19 | 796 |
-| well_written     | outro_humano |        1.48 |         5.14 |      -5.7  |       9.09 | 795 |
+| metrica          | avaliador    |   pearson_% |    p |   ic_fisher_inf_% |   ic_fisher_sup_% |   ic_boot_inf_% |   ic_boot_sup_% |   spearman_% |   n |
+|:-----------------|:-------------|------------:|-----:|------------------:|------------------:|----------------:|----------------:|-------------:|----:|
+| likeable         | llm          |        9    | 0.01 |              2.09 |             15.83 |            2.09 |           15.52 |         9.08 | 802 |
+| likeable         | outro_humano |       14.67 | 0    |              7.83 |             21.38 |            8.84 |           20.43 |        16.17 | 802 |
+| high_quality     | llm          |        5.57 | 0.12 |             -1.37 |             12.45 |           -1.11 |           12.65 |         5.42 | 800 |
+| high_quality     | outro_humano |       13.22 | 0    |              6.35 |             19.97 |            6.39 |           20.44 |        13.67 | 800 |
+| understandable   | llm          |       13.08 | 0    |              6.2  |             19.84 |            5.97 |           20.8  |        11.15 | 798 |
+| understandable   | outro_humano |       18.45 | 0    |             11.66 |             25.07 |           11.24 |           25.11 |        17.33 | 798 |
+| sparked_interest | llm          |        1.25 | 0.72 |             -5.69 |              8.17 |           -6.06 |            8.79 |         1.29 | 801 |
+| sparked_interest | outro_humano |        4.83 | 0.17 |             -2.11 |             11.71 |           -2.48 |           12.21 |         5.05 | 801 |
+| funny            | llm          |        9.47 | 0.01 |              2.56 |             16.29 |            1.69 |           16.56 |         8    | 801 |
+| funny            | outro_humano |        6.72 | 0.06 |             -0.21 |             13.58 |           -0.54 |           14.32 |         7.05 | 801 |
+| informative      | llm          |       19.11 | 0    |             12.35 |             25.69 |           11.9  |           26.45 |        18.89 | 802 |
+| informative      | outro_humano |       19.6  | 0    |             12.85 |             26.17 |           12.7  |           26.37 |        21.56 | 802 |
+| creative         | llm          |        7.3  | 0.04 |              0.36 |             14.16 |            0.74 |           14.45 |         6.98 | 799 |
+| creative         | outro_humano |       15.54 | 0    |              8.69 |             22.24 |            8.26 |           22.99 |        16.24 | 798 |
+| well_written     | llm          |        3.5  | 0.32 |             -3.46 |             10.42 |           -3.25 |           10.19 |         3.44 | 796 |
+| well_written     | outro_humano |        1.48 | 0.68 |             -5.48 |              8.42 |           -5.7  |            9.09 |         5.14 | 795 |
 
 
 Média nas 8 métricas: LLM 8.53% | outro humano 11.81%
@@ -126,29 +126,29 @@ Mesma conclusão que os humanos em **15 de 24** comparações (mesma significân
 | engracados   | well_written     |        -0.193 |       0.083 |    -0.227 |   0.012 | True          | False             |
 
 
-### 2. Correlação com cada participante (Pearson %, IC 95% por bootstrap)
+### 2. Correlação com cada participante (Pearson %, p-valor e IC 95%)
 
-`outro_humano` = média dos outros participantes que viram o mesmo segue (o quanto as pessoas concordam entre si).
+`outro_humano` = média dos outros participantes que viram o mesmo segue (o quanto as pessoas concordam entre si). `ic_fisher` = intervalo do scipy.stats.pearsonr (supõe notas independentes); `ic_boot` = bootstrap por participante (respeita as várias notas de cada pessoa).
 
 
-| metrica          | avaliador    |   pearson_% |   spearman_% |   ic95_inf |   ic95_sup |   n |
-|:-----------------|:-------------|------------:|-------------:|-----------:|-----------:|----:|
-| likeable         | llm          |        8.63 |         8.05 |       1.3  |      16.22 | 802 |
-| likeable         | outro_humano |       14.67 |        16.17 |       8.84 |      20.43 | 802 |
-| high_quality     | llm          |        7.64 |         7.6  |       0.05 |      15.08 | 800 |
-| high_quality     | outro_humano |       13.22 |        13.67 |       6.39 |      20.44 | 800 |
-| understandable   | llm          |        6.2  |         5.38 |      -1.64 |      13.76 | 798 |
-| understandable   | outro_humano |       18.45 |        17.33 |      11.24 |      25.11 | 798 |
-| sparked_interest | llm          |       -0.41 |         0.03 |      -7.61 |       6.6  | 801 |
-| sparked_interest | outro_humano |        4.83 |         5.05 |      -2.48 |      12.21 | 801 |
-| funny            | llm          |        1.94 |         2.63 |      -6.71 |      10.67 | 801 |
-| funny            | outro_humano |        6.72 |         7.05 |      -0.54 |      14.32 | 801 |
-| informative      | llm          |       35.41 |        34.62 |      27.88 |      42.84 | 802 |
-| informative      | outro_humano |       19.6  |        21.56 |      12.7  |      26.37 | 802 |
-| creative         | llm          |        8.26 |        10.17 |       0.72 |      15.34 | 799 |
-| creative         | outro_humano |       15.54 |        16.24 |       8.26 |      22.99 | 798 |
-| well_written     | llm          |       11.63 |        11.27 |       4.14 |      18.74 | 796 |
-| well_written     | outro_humano |        1.48 |         5.14 |      -5.7  |       9.09 | 795 |
+| metrica          | avaliador    |   pearson_% |    p |   ic_fisher_inf_% |   ic_fisher_sup_% |   ic_boot_inf_% |   ic_boot_sup_% |   spearman_% |   n |
+|:-----------------|:-------------|------------:|-----:|------------------:|------------------:|----------------:|----------------:|-------------:|----:|
+| likeable         | llm          |        8.63 | 0.01 |              1.71 |             15.46 |            1.3  |           16.22 |         8.05 | 802 |
+| likeable         | outro_humano |       14.67 | 0    |              7.83 |             21.38 |            8.84 |           20.43 |        16.17 | 802 |
+| high_quality     | llm          |        7.64 | 0.03 |              0.71 |             14.5  |            0.05 |           15.08 |         7.6  | 800 |
+| high_quality     | outro_humano |       13.22 | 0    |              6.35 |             19.97 |            6.39 |           20.44 |        13.67 | 800 |
+| understandable   | llm          |        6.2  | 0.08 |             -0.74 |             13.09 |           -1.64 |           13.76 |         5.38 | 798 |
+| understandable   | outro_humano |       18.45 | 0    |             11.66 |             25.07 |           11.24 |           25.11 |        17.33 | 798 |
+| sparked_interest | llm          |       -0.41 | 0.91 |             -7.34 |              6.51 |           -7.61 |            6.6  |         0.03 | 801 |
+| sparked_interest | outro_humano |        4.83 | 0.17 |             -2.11 |             11.71 |           -2.48 |           12.21 |         5.05 | 801 |
+| funny            | llm          |        1.94 | 0.58 |             -5    |              8.85 |           -6.71 |           10.67 |         2.63 | 801 |
+| funny            | outro_humano |        6.72 | 0.06 |             -0.21 |             13.58 |           -0.54 |           14.32 |         7.05 | 801 |
+| informative      | llm          |       35.41 | 0    |             29.21 |             41.32 |           27.88 |           42.84 |        34.62 | 802 |
+| informative      | outro_humano |       19.6  | 0    |             12.85 |             26.17 |           12.7  |           26.37 |        21.56 | 802 |
+| creative         | llm          |        8.26 | 0.02 |              1.33 |             15.11 |            0.72 |           15.34 |        10.17 | 799 |
+| creative         | outro_humano |       15.54 | 0    |              8.69 |             22.24 |            8.26 |           22.99 |        16.24 | 798 |
+| well_written     | llm          |       11.63 | 0    |              4.72 |             18.43 |            4.14 |           18.74 |        11.27 | 796 |
+| well_written     | outro_humano |        1.48 | 0.68 |             -5.48 |              8.42 |           -5.7  |            9.09 |         5.14 | 795 |
 
 
 Média nas 8 métricas: LLM 9.91% | outro humano 11.81%
@@ -208,29 +208,29 @@ Mesma conclusão que os humanos em **16 de 24** comparações (mesma significân
 | engracados   | well_written     |        -0.193 |       0.083 |    -0.246 |   0     | True          | False             |
 
 
-### 2. Correlação com cada participante (Pearson %, IC 95% por bootstrap)
+### 2. Correlação com cada participante (Pearson %, p-valor e IC 95%)
 
-`outro_humano` = média dos outros participantes que viram o mesmo segue (o quanto as pessoas concordam entre si).
+`outro_humano` = média dos outros participantes que viram o mesmo segue (o quanto as pessoas concordam entre si). `ic_fisher` = intervalo do scipy.stats.pearsonr (supõe notas independentes); `ic_boot` = bootstrap por participante (respeita as várias notas de cada pessoa).
 
 
-| metrica          | avaliador    |   pearson_% |   spearman_% |   ic95_inf |   ic95_sup |   n |
-|:-----------------|:-------------|------------:|-------------:|-----------:|-----------:|----:|
-| likeable         | llm          |       10.14 |         9.85 |       2.58 |      17.6  | 802 |
-| likeable         | outro_humano |       14.67 |        16.17 |       8.84 |      20.43 | 802 |
-| high_quality     | llm          |        8.11 |         8.29 |       0.76 |      15.23 | 800 |
-| high_quality     | outro_humano |       13.22 |        13.67 |       6.39 |      20.44 | 800 |
-| understandable   | llm          |        9.35 |         9.61 |       1.79 |      17.19 | 798 |
-| understandable   | outro_humano |       18.45 |        17.33 |      11.24 |      25.11 | 798 |
-| sparked_interest | llm          |       -0.27 |         0.01 |      -7.4  |       6.85 | 801 |
-| sparked_interest | outro_humano |        4.83 |         5.05 |      -2.48 |      12.21 | 801 |
-| funny            | llm          |        7.25 |         5.89 |      -1.22 |      15.2  | 801 |
-| funny            | outro_humano |        6.72 |         7.05 |      -0.54 |      14.32 | 801 |
-| informative      | llm          |       33.13 |        31.9  |      25.29 |      40.41 | 802 |
-| informative      | outro_humano |       19.6  |        21.56 |      12.7  |      26.37 | 802 |
-| creative         | llm          |        9.51 |        11.29 |       2.27 |      16.14 | 799 |
-| creative         | outro_humano |       15.54 |        16.24 |       8.26 |      22.99 | 798 |
-| well_written     | llm          |       11.29 |        11.92 |       3.72 |      18.76 | 796 |
-| well_written     | outro_humano |        1.48 |         5.14 |      -5.7  |       9.09 | 795 |
+| metrica          | avaliador    |   pearson_% |    p |   ic_fisher_inf_% |   ic_fisher_sup_% |   ic_boot_inf_% |   ic_boot_sup_% |   spearman_% |   n |
+|:-----------------|:-------------|------------:|-----:|------------------:|------------------:|----------------:|----------------:|-------------:|----:|
+| likeable         | llm          |       10.14 | 0    |              3.24 |             16.94 |            2.58 |           17.6  |         9.85 | 802 |
+| likeable         | outro_humano |       14.67 | 0    |              7.83 |             21.38 |            8.84 |           20.43 |        16.17 | 802 |
+| high_quality     | llm          |        8.11 | 0.02 |              1.18 |             14.96 |            0.76 |           15.23 |         8.29 | 800 |
+| high_quality     | outro_humano |       13.22 | 0    |              6.35 |             19.97 |            6.39 |           20.44 |        13.67 | 800 |
+| understandable   | llm          |        9.35 | 0.01 |              2.42 |             16.18 |            1.79 |           17.19 |         9.61 | 798 |
+| understandable   | outro_humano |       18.45 | 0    |             11.66 |             25.07 |           11.24 |           25.11 |        17.33 | 798 |
+| sparked_interest | llm          |       -0.27 | 0.94 |             -7.2  |              6.65 |           -7.4  |            6.85 |         0.01 | 801 |
+| sparked_interest | outro_humano |        4.83 | 0.17 |             -2.11 |             11.71 |           -2.48 |           12.21 |         5.05 | 801 |
+| funny            | llm          |        7.25 | 0.04 |              0.33 |             14.11 |           -1.22 |           15.2  |         5.89 | 801 |
+| funny            | outro_humano |        6.72 | 0.06 |             -0.21 |             13.58 |           -0.54 |           14.32 |         7.05 | 801 |
+| informative      | llm          |       33.13 | 0    |             26.82 |             39.16 |           25.29 |           40.41 |        31.9  | 802 |
+| informative      | outro_humano |       19.6  | 0    |             12.85 |             26.17 |           12.7  |           26.37 |        21.56 | 802 |
+| creative         | llm          |        9.51 | 0.01 |              2.59 |             16.34 |            2.27 |           16.14 |        11.29 | 799 |
+| creative         | outro_humano |       15.54 | 0    |              8.69 |             22.24 |            8.26 |           22.99 |        16.24 | 798 |
+| well_written     | llm          |       11.29 | 0    |              4.37 |             18.09 |            3.72 |           18.76 |        11.92 | 796 |
+| well_written     | outro_humano |        1.48 | 0.68 |             -5.48 |              8.42 |           -5.7  |            9.09 |         5.14 | 795 |
 
 
 Média nas 8 métricas: LLM 11.06% | outro humano 11.81%

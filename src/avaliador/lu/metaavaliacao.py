@@ -13,6 +13,7 @@ import numpy as np
 import pandas as pd
 
 from ..comum.correlacao import correlacao as _correlacao
+from ..comum.correlacao import pearson_ic
 
 NIVEIS = ["dataset", "user", "pair"]
 
@@ -130,3 +131,41 @@ def bootstrap_usuarios(
                           "dif_ic95_sup": np.nanpercentile(d, 97.5)})
         linhas.append(linha)
     return pd.DataFrame(linhas).set_index("avaliador")
+
+
+def tabela_pearson_ic(
+    df: pd.DataFrame,
+    avaliadores: dict[str, str],
+    aspectos,
+    confianca: float = 0.95,
+    reamostragens: int = 1000,
+    semente: int = 2026,
+) -> pd.DataFrame:
+    """Pearson no nível do conjunto, por avaliador e aspecto, com p-valor e dois intervalos.
+
+    - `ic_fisher`: o intervalo do scipy.stats.pearsonr (transformação de Fisher). Supõe que as
+      2.536 explicações são independentes, o que não é verdade: cada usuário avaliou ~65.
+    - `ic_boot`: bootstrap reamostrando USUÁRIOS, que respeita essa dependência.
+    Os dois lado a lado mostram o quanto a fórmula de Fisher subestima a incerteza aqui.
+    """
+    rng = np.random.default_rng(semente)
+    usuarios = df["user"].unique()
+    indices = {u: np.flatnonzero(df["user"].values == u) for u in usuarios}
+    sorteios = [np.concatenate([indices[u] for u in rng.choice(usuarios, len(usuarios))])
+                for _ in range(reamostragens)]
+    cauda = 100 * (1 - confianca) / 2
+
+    linhas = []
+    for nome, prefixo in avaliadores.items():
+        for aspecto in aspectos:
+            real = df[f"user_{aspecto}"].to_numpy(float)
+            pred = df[f"{prefixo}_{aspecto}"].to_numpy(float)
+            r = pearson_ic(real, pred, confianca)
+            boot = [_correlacao(real[i], pred[i], "pearson") for i in sorteios]
+            linhas.append({
+                "avaliador": nome, "aspecto": aspecto, "pearson_%": 100 * r.r, "p": r.p,
+                "ic_fisher_inf_%": 100 * r.ic_inf, "ic_fisher_sup_%": 100 * r.ic_sup,
+                "ic_boot_inf_%": 100 * np.nanpercentile(boot, cauda),
+                "ic_boot_sup_%": 100 * np.nanpercentile(boot, 100 - cauda), "n": r.n,
+            })
+    return pd.DataFrame(linhas)

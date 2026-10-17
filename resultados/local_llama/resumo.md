@@ -44,6 +44,33 @@ Pearson médio nos 4 aspectos, nível conjunto. Na comparação com o E0, se o i
 | llama3.1-8b E0        |     12.98 |       9.34 |      16.53 | nan             |      nan    |         nan    |         nan    |
 | llama3.1-8b so_resumo |     21.25 |      16.99 |      25.41 | llama3.1-8b E0  |        8.27 |           4.15 |          12.57 |
 
+## Pearson por aspecto com p-valor e intervalos de 95%
+
+Nível do conjunto. `ic_fisher` = intervalo do scipy.stats.pearsonr (supõe explicações independentes); `ic_boot` = bootstrap por usuário (respeita as várias explicações de cada usuário). Quando os dois diferem, o bootstrap é o mais confiável.
+
+| avaliador             | aspecto        |   pearson_% |           p |   ic_fisher_inf_% |   ic_fisher_sup_% |   ic_boot_inf_% |   ic_boot_sup_% |    n |
+|:----------------------|:---------------|------------:|------------:|------------------:|------------------:|----------------:|----------------:|-----:|
+| Annotator-1           | persuasiveness |       19.88 | 5.05873e-24 |             16.11 |             23.59 |           14.74 |           25.02 | 2536 |
+| Annotator-1           | transparency   |       15.66 | 2.15992e-15 |             11.84 |             19.43 |           11.87 |           19.78 | 2536 |
+| Annotator-1           | accuracy       |       10.16 | 2.9295e-07  |              6.29 |             14    |            5.61 |           14.81 | 2536 |
+| Annotator-1           | satisfaction   |       14.93 | 4.04321e-14 |             11.11 |             18.72 |            9.86 |           20.36 | 2536 |
+| Annotator-2           | persuasiveness |       21.4  | 1.1512e-27  |             17.66 |             25.09 |           16.33 |           26.37 | 2536 |
+| Annotator-2           | transparency   |       25.97 | 2.26008e-40 |             22.31 |             29.57 |           21.64 |           30.75 | 2536 |
+| Annotator-2           | accuracy       |       10.96 | 3.15793e-08 |              7.1  |             14.79 |            6.05 |           15.8  | 2536 |
+| Annotator-2           | satisfaction   |        8.86 | 7.96958e-06 |              4.98 |             12.7  |            1.08 |           16.5  | 2536 |
+| Media-do-tipo         | persuasiveness |       30.93 | 2.41386e-57 |             27.37 |             34.41 |           26.75 |           35.34 | 2536 |
+| Media-do-tipo         | transparency   |       28.8  | 1.28906e-49 |             25.19 |             32.33 |           24.42 |           33.63 | 2536 |
+| Media-do-tipo         | accuracy       |       29.13 | 8.77819e-51 |             25.53 |             32.65 |           24.38 |           34.25 | 2536 |
+| Media-do-tipo         | satisfaction   |       26.4  | 1.08079e-41 |             22.74 |             29.98 |           20.78 |           32.37 | 2536 |
+| llama3.1-8b E0        | persuasiveness |       14.4  | 3.14571e-13 |             10.57 |             18.19 |            9.92 |           19.07 | 2536 |
+| llama3.1-8b E0        | transparency   |       13.85 | 2.46079e-12 |             10.01 |             17.65 |            9.68 |           17.79 | 2536 |
+| llama3.1-8b E0        | accuracy       |        9.35 | 2.40602e-06 |              5.48 |             13.19 |            4.96 |           13.77 | 2536 |
+| llama3.1-8b E0        | satisfaction   |       14.31 | 4.45953e-13 |             10.48 |             18.1  |            9.58 |           18.53 | 2536 |
+| llama3.1-8b so_resumo | persuasiveness |       19.1  | 2.95667e-22 |             15.32 |             22.82 |           13.47 |           24.58 | 2536 |
+| llama3.1-8b so_resumo | transparency   |       18.49 | 6.00485e-21 |             14.71 |             22.23 |           13.66 |           22.65 | 2536 |
+| llama3.1-8b so_resumo | accuracy       |       25.66 | 2.08064e-39 |             21.98 |             29.26 |           20.07 |           31.27 | 2536 |
+| llama3.1-8b so_resumo | satisfaction   |       21.74 | 1.66948e-28 |             18    |             25.42 |           14.8  |           27.81 | 2536 |
+
 ## Correlação dentro do tipo de explicação
 
 Pearson médio calculado separadamente em cada um dos 9 tipos de explicação. Mede se o avaliador distingue explicações do mesmo tipo, e não só qual tipo costuma ser melhor.

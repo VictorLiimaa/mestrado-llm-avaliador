@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 
 from avaliador.comum import execucao
-from avaliador.comum.correlacao import correlacao, kendall, pearson, spearman
+from avaliador.comum.correlacao import correlacao, kendall, pearson, pearson_ic, spearman
 from avaliador.comum.estatistica import ttest_independente, ttest_pareado
 from avaliador.comum.llm import ConfigModelo, MockLLM, ler_notas
 
@@ -35,6 +35,29 @@ def test_correlacoes_batem_com_scipy():
         assert pearson(a, b) == pytest.approx(stats.pearsonr(a, b)[0])
         assert spearman(a, b) == pytest.approx(stats.spearmanr(a, b)[0])
         assert kendall(a, b) == pytest.approx(stats.kendalltau(a, b)[0])
+
+
+def test_pearson_ic_bate_com_scipy():
+    stats = pytest.importorskip("scipy.stats")
+    rng = np.random.default_rng(2)
+    for n in [3, 4, 10, 60, 800]:
+        a = rng.integers(1, 6, n).astype(float)
+        b = (a + rng.integers(-3, 4, n)).astype(float)
+        nosso, ref = pearson_ic(a, b), stats.pearsonr(a, b)
+        for confianca in (0.95, 0.90):
+            ic = ref.confidence_interval(confianca)
+            meu = pearson_ic(a, b, confianca)
+            assert (meu.ic_inf, meu.ic_sup) == pytest.approx((ic.low, ic.high))
+        assert (nosso.r, nosso.p) == pytest.approx((ref.statistic, ref.pvalue))
+
+
+def test_pearson_ic_sem_scipy():
+    """Valores fixos obtidos com scipy 1.18, para conferir mesmo onde o scipy é bloqueado."""
+    r = pearson_ic([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [2, 1, 4, 3, 6, 5, 8, 7, 10, 9])
+    assert r.r == pytest.approx(0.9393939, abs=1e-6)
+    assert r.p == pytest.approx(5.48405e-05, rel=1e-4)
+    assert (r.ic_inf, r.ic_sup) == pytest.approx((0.758244, 0.985895), abs=1e-6)
+    assert np.isnan(pearson_ic([1, 1, 1, 1], [1, 2, 3, 4]).r)
 
 
 def test_ttest_bate_com_scipy():

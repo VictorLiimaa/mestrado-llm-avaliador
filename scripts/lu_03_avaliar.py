@@ -1,7 +1,8 @@
 """Meta-avaliação: correlação de cada modelo, condição de enriquecimento e combinação com as notas reais.
 
 Uso:  python scripts/lu_03_avaliar.py configs/lu/mock.yaml
-Saída: resultados/<experimento>/tabela_pearson.csv, tabela_spearman.csv, tabela_kendall.csv e resumo.md
+Saída: resultados/<experimento>/: tabelas de Pearson, Spearman e Kendall, pearson_ic.csv,
+       intervalos_confianca.csv, dentro_do_tipo.csv e resumo.md
 As linhas dos anotadores humanos, calculadas na mesma amostra, servem de referência.
 """
 import sys
@@ -13,7 +14,7 @@ import yaml
 from avaliador.lu.baselines import media_do_tipo
 from avaliador.lu.dados import ASPECTOS, carregar
 from avaliador.lu.juiz import amostrar_usuarios, combinar, juntar_notas, ler_cache
-from avaliador.lu.metaavaliacao import bootstrap_usuarios, dentro_do_tipo, tabela
+from avaliador.lu.metaavaliacao import bootstrap_usuarios, dentro_do_tipo, tabela, tabela_pearson_ic
 
 RAIZ = Path(__file__).resolve().parents[1]
 
@@ -86,6 +87,17 @@ def main(caminho_config: str):
                 "Pearson médio nos 4 aspectos, nível conjunto. Na comparação com o E0, "
                 "se o intervalo da diferença não contém zero, a diferença dificilmente é acaso.\n\n"
                 + ic.round(2).to_markdown() + "\n\n")
+        pic = tabela_pearson_ic(alvo, avaliadores, ASPECTOS,
+                                reamostragens=cfg.get("reamostragens_bootstrap", 1000))
+        pic.round({"pearson_%": 4, "ic_fisher_inf_%": 4, "ic_fisher_sup_%": 4, "ic_boot_inf_%": 4,
+                   "ic_boot_sup_%": 4}).to_csv(pasta / "pearson_ic.csv", index=False)
+        f.write("## Pearson por aspecto com p-valor e intervalos de 95%\n\n"
+                "Nível do conjunto. `ic_fisher` = intervalo do scipy.stats.pearsonr (supõe explicações "
+                "independentes); `ic_boot` = bootstrap por usuário (respeita as várias explicações de "
+                "cada usuário). Quando os dois diferem, o bootstrap é o mais confiável.\n\n"
+                + pic.round({"pearson_%": 2, "ic_fisher_inf_%": 2, "ic_fisher_sup_%": 2,
+                             "ic_boot_inf_%": 2, "ic_boot_sup_%": 2})
+                .to_markdown(index=False, floatfmt="g") + "\n\n")
         dt = dentro_do_tipo(alvo, {k: v for k, v in avaliadores.items() if k != "Media-do-tipo"}, ASPECTOS)
         dt.round(2).to_csv(pasta / "dentro_do_tipo.csv")
         f.write("## Correlação dentro do tipo de explicação\n\n"
