@@ -73,7 +73,11 @@ def carregar_segues(pasta: str | Path) -> pd.DataFrame:
                 "artista2": segunda["artist_name"],
                 "texto": textos[sistema],
                 "categoria": categorias.get((segue_idx, sistema)),
-                "interestingness": float(d["segue_dave"]["score"]) if sistema == "dave" else None,
+                # Nota do próprio Dave e seus três componentes (só existem para os segues do Dave):
+                # interestingness = 0,4 raridade + 0,2 impopularidade + 0,4 concisão.
+                **{campo: float(d["segue_dave"][chave]) if sistema == "dave" else None
+                   for campo, chave in [("interestingness", "score"), ("raridade", "rarity"),
+                                        ("impopularidade", "unpopularity"), ("concisao", "shortness")]},
             })
     return pd.DataFrame(linhas)
 
@@ -93,6 +97,59 @@ def carregar_notas(pasta: str | Path) -> pd.DataFrame:
                 valor = resposta.get(f"segue_eval_{posicao}_{segue_idx}_{sistema}_q_{i}")
                 linha[metrica] = LIKERT.get(valor)
             linhas.append(linha)
+    return pd.DataFrame(linhas)
+
+
+# Perguntas sobre o participante, no início do teste (templates/user_trial_page_user_infos.html):
+# 7 itens de "Active Engagement" do Gold-MSI (escala de 7 pontos), mais duas de múltipla escolha.
+ENGAJAMENTO = [
+    "I spend a lot of my disposable income on music.",
+    "I enjoy writing about music, for example on blogs and forums.",
+    "I keep track of new of music that I come across (e.g. new artists or recordings).",
+    "I often read or search the internet for things related to music.",
+    "I spend a lot of my free time doing music-related activities.",
+    "I'm intrigued by musical styles I'm not familiar with and want to find out more.",
+    "Music is kind of an addiction for me - I couldn't live without it.",
+]
+OUTRAS_PERGUNTAS = {
+    "active_engament_q_7_q_0": "Live music events I attended as an audience member in 2019",
+    "active_engament_q_8_q_0": "Time per day I listen attentively to music",
+    "proficiency_q_0": "My level of English",
+}
+
+
+def carregar_perfis(pasta: str | Path) -> dict[int, list[tuple[str, str]]]:
+    """Para cada participante (mesmo índice de `carregar_notas`), as respostas sobre si mesmo como
+    pares (pergunta, resposta), em texto, como apareciam na tela. Perguntas sem resposta são omitidas.
+    As respostas não são convertidas em números: a LLM lê o texto (evita erros de codificação)."""
+    perfis = {}
+    for usuario, r in enumerate(carregar_respostas(pasta)):
+        pares = [(p, " ".join(r[f"active_engagement_q_{i}"].split()))
+                 for i, p in enumerate(ENGAJAMENTO) if r.get(f"active_engagement_q_{i}")]
+        pares += [(p, r[chave]) for chave, p in OUTRAS_PERGUNTAS.items() if r.get(chave)]
+        perfis[usuario] = pares
+    return perfis
+
+
+def carregar_familiaridade(pasta: str | Path) -> pd.DataFrame:
+    """Se o participante conhecia cada música e artista de cada segue que avaliou.
+
+    Uma linha por (usuario, posicao). A tela de familiaridade listava as 6 segundas músicas, na
+    ordem dos segues, e depois as 3 primeiras músicas (uma por par): a segunda música do segue na
+    posição i é a pergunta i; a primeira música é a pergunta 6 + i // 2 (como em
+    analyze_answers.familiarity_df, dos autores). True = "Familiar"; None = sem resposta.
+    """
+    valor = {"Familiar": True, "Not Familiar": False}
+    linhas = []
+    for usuario, r in enumerate(carregar_respostas(pasta)):
+        for i in range(6):
+            linhas.append({
+                "usuario": usuario, "posicao": i,
+                "conhece_musica1": valor.get(r.get(f"familiarity_songs_q_{6 + i // 2}")),
+                "conhece_artista1": valor.get(r.get(f"familiarity_artists_q_{6 + i // 2}")),
+                "conhece_musica2": valor.get(r.get(f"familiarity_songs_q_{i}")),
+                "conhece_artista2": valor.get(r.get(f"familiarity_artists_q_{i}")),
+            })
     return pd.DataFrame(linhas)
 
 

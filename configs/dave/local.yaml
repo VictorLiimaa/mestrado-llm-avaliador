@@ -25,3 +25,11 @@ modelos:
 combinacao:                  # média dos dois modelos, por condição
   - nome: media-qwen-llama
     modelos: [qwen2.5-7b, llama3.1-8b]
+# Teste de treino e teste (scripts/dave_04_treino_teste.py): o que o prompt sabe sobre o participante.
+# Cerca de 900 chamadas por modelo e condição (~15 min cada); a ordem é a de prioridade.
+treino_teste:
+  condicoes: [E0]
+# Comparação direta no par (scripts/dave_07_par_direto.py). Por modelo: 344 chamadas no E0 e
+# ~900 em cada outra condição; a ordem é a de prioridade.
+  par_direto:
+    condicoes: [E0, perfil, familiaridade, historico, completo]

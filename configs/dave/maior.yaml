@@ -1,0 +1,26 @@
+# Teste com um modelo maior (só o E0): o problema é a LLM ou o tamanho do modelo?
+# Mesma pasta de resultados das rodadas com Qwen 7B e Llama 8B (experimento dave_local), para
+# comparar nas mesmas condições. Troque `modelo` se for usar outro tamanho (ex.: qwen2.5:32b).
+# Antes: ollama pull qwen2.5:14b
+#
+# Uso:
+#   python scripts/dave_02_rodar_juiz.py configs/dave/maior.yaml       (344 notas, E0)
+#   python scripts/dave_07_par_direto.py configs/dave/maior.yaml       (344 comparações, E0)
+#   python scripts/dave_03_avaliar.py configs/dave/maior.yaml          (conclusões e correlação)
+experimento: dave_local
+condicoes: [E0]
+resposta_curta: true
+paralelo: 1                # 14B não cabe inteiro em 6 GB de VRAM: parte roda na CPU; uma chamada por vez
+reamostragens_bootstrap: 1000
+modelos:
+  - nome: qwen2.5-14b
+    backend: openai_compat
+    modelo: qwen2.5:14b
+    base_url: http://localhost:11434/v1
+    api_key_env: OLLAMA_API_KEY
+    temperatura: 0.0
+    max_tokens: 32
+# Comparação direta com informação sobre a pessoa (~900 chamadas por condição; ordem = prioridade).
+# Comparações principais, definidas antes de rodar: perfil contra E0 e familiaridade contra E0.
+par_direto:
+  condicoes: [E0, perfil, familiaridade, historico, completo]

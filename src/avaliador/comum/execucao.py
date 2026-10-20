@@ -38,10 +38,13 @@ def executar(
     condicao: str,
     paralelo: int = 1,
     progresso: bool = True,
+    ler: Callable | None = None,
 ) -> dict:
     """Pede à LLM as notas de cada item que ainda não está no cache.
 
     `chave(item)` identifica o item no cache; `montar_prompt(item)` devolve o texto enviado.
+    `ler(resposta, n_notas)` transforma a resposta em lista de números (padrão: `ler_notas`, notas
+    de 1 a 5); devolve None se a resposta não puder ser lida.
     Devolve todos os registros (antigos e novos), indexados pela chave.
     """
     arquivo = Path(arquivo)
@@ -62,7 +65,7 @@ def executar(
     def processar(item) -> dict:
         resposta = llm.gerar(montar_prompt(item))
         return {campo_chave: chave(item), "modelo": llm.config.nome, "condicao": condicao,
-                "resposta": resposta, "notas": ler_notas(resposta, quantidade=n_notas)}
+                "resposta": resposta, "notas": (ler or ler_notas)(resposta, n_notas)}
 
     with arquivo.open("a", encoding="utf-8") as saida:
         def gravar(registro: dict) -> None:

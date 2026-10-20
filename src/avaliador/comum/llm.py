@@ -33,6 +33,27 @@ def ler_notas(resposta: str, quantidade: int = 4) -> list[int] | None:
     return notas[-quantidade:]
 
 
+_ESCOLHA = re.compile(r"(?<![A-Za-z])([AB])(?![A-Za-z])")
+
+
+_ESCOLHA_NUMERADA = re.compile(r"(\d+)\s*[:=.)-]\s*([AB])(?![A-Za-z])")
+
+
+def ler_escolhas(resposta: str, quantidade: int = 8) -> list[int] | None:
+    """Escolhas A/B como 1 (A) e 2 (B). Primeiro procura o formato numerado "1:A 2:B ...", com
+    todas as posições de 1 a `quantidade`; senão, pega as últimas `quantidade` letras A/B soltas.
+    Devolve None se não houver o suficiente."""
+    if not isinstance(resposta, str):
+        return None
+    numeradas = {int(n): l for n, l in _ESCOLHA_NUMERADA.findall(resposta)}
+    if all(i in numeradas for i in range(1, quantidade + 1)):
+        return [1 if numeradas[i] == "A" else 2 for i in range(1, quantidade + 1)]
+    letras = _ESCOLHA.findall(resposta)
+    if len(letras) < quantidade:
+        return None
+    return [1 if l == "A" else 2 for l in letras[-quantidade:]]
+
+
 @dataclass
 class ConfigModelo:
     nome: str                      # nome usado nos resultados, ex.: "qwen2.5-7b"
@@ -59,6 +80,8 @@ class MockLLM(LLM):
 
     def gerar(self, prompt: str) -> str:
         semente = int(hashlib.sha256((self.config.nome + prompt).encode()).hexdigest(), 16)
+        if "replacing each ? with A or B" in prompt:               # comparação direta no par (A ou B)
+            return " ".join(f"{i + 1}:{'AB'[(semente >> i) & 1]}" for i in range(8))
         notas = [(semente >> (8 * i)) % 5 + 1 for i in range(8)]  # 8 serve ao Lu (lê as 4 últimas) e ao Dave
         return "Ratings: " + " ".join(map(str, notas))
 

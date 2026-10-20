@@ -7,3 +7,7 @@ reamostragens_bootstrap: 200
 modelos:
   - nome: mock
     backend: mock
+treino_teste:
+  condicoes: [historico, completo, familiaridade, perfil, perfil_familiaridade]
+par_direto:
+  condicoes: [E0, perfil, familiaridade, completo, historico]

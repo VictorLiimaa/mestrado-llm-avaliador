@@ -1,0 +1,344 @@
+{"chave": "103_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "103_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "59_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:B 6:B 7:B 8:A", "notas": [1, 1, 1, 1, 2, 2, 2, 1]}
+{"chave": "59_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "219_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "219_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "275_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "275_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "277_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 2, 2, 2, 2]}
+{"chave": "277_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "374_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "374_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "394_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "394_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "404_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "404_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 2, 1, 1, 2, 2]}
+{"chave": "477_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 2, 1, 2, 2, 2]}
+{"chave": "477_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "540_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "540_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "564_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "564_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "593_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "593_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "608_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "608_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "670_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "670_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "678_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:A 8:B", "notas": [2, 2, 2, 2, 1, 1, 1, 2]}
+{"chave": "678_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "737_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "737_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "785_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "785_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 1, 1, 1, 2, 2]}
+{"chave": "793_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "793_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "853_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "853_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "863_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "863_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "865_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 2, 1, 1, 2, 2]}
+{"chave": "865_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 1, 1, 1, 2, 2]}
+{"chave": "925_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "925_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "939_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "939_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "940_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "940_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "965_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "965_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "1049_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1049_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1162_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1162_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1174_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1174_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "1201_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1201_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "1284_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1284_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1305_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1305_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "1327_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1327_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1339_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1339_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1342_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1342_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "1365_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1365_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1371_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "1371_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1434_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1434_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1621_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1621_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1676_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "1676_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1776_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1776_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1789_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "1789_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1811_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1811_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 2, 1, 1, 2, 2]}
+{"chave": "1839_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1839_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "1844_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 1, 1, 1, 2, 2]}
+{"chave": "1844_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1847_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "1847_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1853_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "1853_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1877_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:? 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "1877_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "1915_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 2, 2, 2, 2, 2]}
+{"chave": "1915_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:A 6:? 7:A 8:A", "notas": null}
+{"chave": "1927_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 2, 2, 2, 2]}
+{"chave": "1927_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "1957_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "1957_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 2, 1, 2, 2, 2]}
+{"chave": "1959_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "1959_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "2061_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2061_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2062_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "2062_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2076_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "2076_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "2217_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2217_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2234_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2234_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2250_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "2250_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "2252_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:? 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2252_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:? 4:? 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "2258_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 2, 2, 2, 2, 2]}
+{"chave": "2258_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 1, 1, 1, 2, 2]}
+{"chave": "2278_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 2, 2, 2, 2, 2]}
+{"chave": "2278_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2345_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2345_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "2347_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2347_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "2442_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2442_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2473_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2473_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2476_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2476_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2652_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2652_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "2661_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2661_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2737_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2737_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2848_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "2848_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "2877_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "2877_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "2878_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "2878_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "2908_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "2908_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "3004_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "3004_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3034_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3034_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:? 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3056_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "3056_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3060_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "3060_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3127_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "3127_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "3197_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "3197_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3205_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3205_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "3210_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3210_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "3211_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3211_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "3224_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 2, 1, 2, 2, 2]}
+{"chave": "3224_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3251_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3251_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "3346_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3346_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "3378_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "3378_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3395_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3395_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3548_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:? 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "3548_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3568_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "3568_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3570_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3570_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3574_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "3574_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "3794_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "3794_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3829_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:A 8:B", "notas": [2, 2, 2, 2, 1, 1, 1, 2]}
+{"chave": "3829_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "3876_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "3876_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3881_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3881_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "3904_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "3904_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:? 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "3952_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "3952_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:B 3:A 4:A 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "4227_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4227_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "4277_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "4277_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "4312_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "4312_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4478_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4478_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4521_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 2, 1, 2, 2, 2]}
+{"chave": "4521_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "4538_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4538_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4561_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "4561_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "4616_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "4616_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4619_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "4619_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "4675_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "4675_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "4687_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4687_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "4717_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:A 8:B", "notas": [2, 2, 2, 2, 1, 1, 1, 2]}
+{"chave": "4717_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "4756_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "4756_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4892_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 2, 1, 2, 2, 2]}
+{"chave": "4892_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:A 8:B", "notas": [2, 2, 2, 2, 1, 1, 1, 2]}
+{"chave": "4945_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:? 5:B 6:? 7:B 8:B", "notas": null}
+{"chave": "4945_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "4953_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4953_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "4992_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "4992_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5002_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5002_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5046_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5046_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5050_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "5050_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5110_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "5110_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5155_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5155_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "5237_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5237_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5313_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:? 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5313_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "5324_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5324_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5377_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "5377_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "5415_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5415_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5419_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5419_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5428_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "5428_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5444_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5444_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "5489_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5489_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "5504_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5504_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5550_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5550_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "5599_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "5599_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5674_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5674_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 2, 1, 2, 2, 2]}
+{"chave": "5727_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:B 6:B 7:A 8:A", "notas": [1, 1, 1, 1, 2, 2, 1, 1]}
+{"chave": "5727_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "5756_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5756_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5783_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "5783_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5792_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "5792_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5821_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5821_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "5904_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5904_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "5930_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5930_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "5934_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:A 8:B", "notas": [2, 2, 2, 2, 1, 1, 1, 2]}
+{"chave": "5934_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "5956_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "5956_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6050_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "6050_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "6066_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "6066_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "6092_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 2, 2, 2, 2]}
+{"chave": "6092_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "6163_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6163_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6167_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "6167_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "6223_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6223_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "6260_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 2, 2, 2, 2, 2]}
+{"chave": "6260_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "6267_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6267_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6312_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6312_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [1, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "6346_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "6346_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "6387_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6387_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6412_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "6412_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "6450_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6450_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "6490_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6490_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6492_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6492_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6690_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "6690_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}
+{"chave": "6797_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "6797_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "6814_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "6814_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 1, 2, 2, 2]}
+{"chave": "6833_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6833_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "6937_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "6937_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 2, 1, 2, 2, 2]}
+{"chave": "7001_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 1, 1, 1, 2, 2]}
+{"chave": "7001_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "7040_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 2, 2, 2, 2]}
+{"chave": "7040_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:A 6:A 7:B 8:B", "notas": [2, 2, 1, 1, 1, 1, 2, 2]}
+{"chave": "7113_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7113_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "7152_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7152_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "7266_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7266_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "7271_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "7271_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "7311_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7311_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "7335_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "7335_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7393_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:A 6:A 7:B 8:B", "notas": [2, 2, 2, 2, 1, 1, 2, 2]}
+{"chave": "7393_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "7462_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:A 5:A 6:B 7:B 8:B", "notas": [2, 2, 2, 1, 1, 2, 2, 2]}
+{"chave": "7462_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7523_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:A 2:A 3:A 4:A 5:? 6:? 7:A 8:A", "notas": null}
+{"chave": "7523_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:B 7:B 8:B", "notas": null}
+{"chave": "7571_dave_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:B 4:B 5:? 6:? 7:B 8:B", "notas": null}
+{"chave": "7571_chain_primeiro", "modelo": "qwen2.5-7b", "condicao": "par_E0", "resposta": "1:B 2:B 3:A 4:A 5:B 6:B 7:B 8:B", "notas": [2, 2, 1, 1, 2, 2, 2, 2]}

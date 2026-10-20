@@ -66,7 +66,20 @@ python scripts/lu_03_avaliar.py configs/lu/qwen.yaml      # correlações em 3 n
 python scripts/dave_01_reproduzir_teste.py                # tabelas do teste com usuários
 python scripts/dave_02_rodar_juiz.py configs/dave/local.yaml   # Qwen e Llama; ~10 min
 python scripts/dave_03_avaliar.py configs/dave/local.yaml      # conclusões, correlação, escolha no par
+python scripts/dave_04_treino_teste.py configs/dave/local.yaml # treino e teste por participante; ~900 chamadas por modelo
+python scripts/dave_05_interestingness.py configs/dave/local.yaml  # nota do próprio Dave: reprodução e pesos aprendidos (sem LLM)
+python scripts/dave_06_escolha_par.py configs/dave/local.yaml     # preferência no par derivada das notas (sem LLM)
+python scripts/dave_07_par_direto.py configs/dave/local.yaml      # comparação direta no par, nas duas ordens
 ```
+
+O passo 4 é o teste offline de treino e teste: para cada participante, um par vira teste, e o
+prompt recebe informação sobre ele (enriquecimento): as notas que deu nos outros pares
+(`historico`), as respostas sobre si no início do teste, com engajamento musical do Gold-MSI,
+shows, tempo de escuta e inglês (`perfil`), se conhecia as músicas e os artistas do segue
+(`familiaridade`), ou tudo junto (`completo`). As condições vêm de `treino_teste.condicoes` na
+configuração. Compara com a média do
+próprio participante, a média dos outros participantes e o E0. Com `--so-avaliar`, só recalcula
+a comparação a partir do cache, sem chamar a LLM.
 
 ### Sem LLM (teste do pipeline)
 
@@ -101,6 +114,19 @@ significativas) e melhora o Llama (resumo do gosto +8,3). Detalhes em `resultado
 | Llama3.1-8B | 15 | 9,9 |
 | Média dos dois | 16 | 11,1 |
 | Outro participante (referência humana) | — | 11,8 |
+
+Um previsor sem LLM, a média que o próprio participante deu nos outros pares, chega a 28,3%
+[21,2; 33,8]: boa parte da nota é o "jeito" de cada pessoa. Tirando esse jeito (correlação
+dentro do participante), a média dos dois modelos fica em 12,8%, contra 15,7% de outro
+participante. Detalhes em `resultados/dave_local/treino_teste/resumo.md`.
+
+A fórmula do próprio Dave (interestingness) é um terceiro juiz automático. A reprodução bate
+com o artigo: nos segues informativos, Spearman 0,25 / 0,23 / 0,22 (p < 0,001) com "likeable",
+"high quality" e "understandable". Aprendendo os pesos da fórmula com treino e teste por segue,
+ela chega a 14,6% nos segues do Dave, empatada com outro participante (14,4%) e acima da LLM
+sem perfil (7,1% e 9,8%); com os pesos do artigo, fica em −0,6% (a fórmula só funciona nos segues
+informativos). Detalhes em `resultados/dave_artigo/correlacoes_interestingness.md` e
+`resultados/dave_local/pesos_aprendidos/resumo.md`.
 
 Nenhuma LLM inverte uma conclusão significativa do artigo. Ela acompanha os humanos em critérios
 do texto ("informativo") e falha nos pessoais ("despertou meu interesse"). Detalhes em
